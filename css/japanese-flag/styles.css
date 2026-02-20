@@ -8,5 +8,5 @@
     Challenge:
     Translate this into using the margin shorthand. 
     */
-    margin: 40px 0 0 100px;
+    margin: 40px auto;
 }
