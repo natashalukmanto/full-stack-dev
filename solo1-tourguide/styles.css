@@ -1,0 +1,90 @@
+body {
+    font-family: Fredoka, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+#header {
+    background: url("images/jakarta.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+}
+
+.header-desc {
+    background-color: pink;
+    padding: 5px 10px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px #fff; 
+}
+
+#activities {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(pink, skyblue);
+}
+
+#activities-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.activities-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    font-size: 20px;
+    margin: auto;
+}
+
+.activities-img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+#tour-guide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    max-width: 600px;
+    background: linear-gradient(salmon, snow);
+    padding: 20px;
+    border-radius: 10px;
+    border: 10px solid plum;
+}
+
+#per-img {
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+#tour-guide-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: start;
+    align-items: start;
+    padding: 0 20px;
+}
