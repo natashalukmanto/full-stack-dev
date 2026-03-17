@@ -1,16 +1,14 @@
-let largeCountries = ["China","India","USA","Indonesia","Pakistan"]
+let largeCountries = ["Tuvalu","India","USA","Indonesia","Monaco"]
 
-/* Use a for loop to log the following to the console:
+// You need to help me fixup the largeCountries array so that 
+// China and Pakistan are added back into their respective places
+largeCountries.pop()
+largeCountries.push("China")
 
-The 5 largest countries in the world:
-- China
-- India
-- United States
-- Indinesia
-- Pakistan
-*/
+// Use push() & pop() and their counterparts unshift() & shift()
+// Google how to use unshift() and shift()
+largeCountries.shift()
+largeCountries.unshift("Pakistan")
 
-console.log("The 5 largest countries in the world:")
-for (let i = 0; i < largeCountries.length; i++) {
-    console.log("- " + largeCountries[i])
-}
+
+console.log(largeCountries)
