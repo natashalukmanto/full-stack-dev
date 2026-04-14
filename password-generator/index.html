@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Happy+Monkey&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Generate a <span id="title">Random Password</span></h1>
+    <p>Never use an insecure password again.</p>
+
+    <div id="checkbox">
+        <input id="toggle" type="checkbox" onclick="toggle()" checked/>
+        <label for="toggle">Include numbers/symbols</label>
+    </div>
+
+    <div id="pass-len">
+        <label for="number">Password Length:</label>
+        <input type="number" id="number" value=15>
+    </div>
+    
+    <button id="btn" onclick="get_passwords()">Generate passwords</button>
+
+    <hr />
+
+    <div id="passwords">
+        <div id="password1" class="password" onclick="updateClipboard(this.textContent)"></div>
+        <div id="password2" class="password" onclick="updateClipboard(this.textContent)"></div>
+    </div>
+    
+
+    <script src="index.js"></script>
+    
+</body>
+
+</html>
