@@ -2,8 +2,17 @@ let myLeads = JSON.parse(localStorage.getItem("myLeads")) || []
 const inputEl = document.getElementById("input-el")
 const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
+const deleteBtn = document.getElementById("delete-btn")
 
 renderLeads()
+console.log(deleteBtn)
+
+deleteBtn.addEventListener("dblclick", function() {
+    console.log("double clicked!")
+    localStorage.clear()
+    myLeads = []
+    renderLeads()
+})
 
 inputBtn.addEventListener("click", function() {
     myLeads.push(inputEl.value)
@@ -19,6 +28,7 @@ inputBtn.addEventListener("click", function() {
 })
 
 function renderLeads() {
+    ulEl.innerHTML = ''
     for (let i = 0; i < myLeads.length; i++) {
         ulEl.innerHTML += 
         `<li>
@@ -27,4 +37,9 @@ function renderLeads() {
             </a>
         </li>`
     }
+}
+
+function deleteLeads() {
+    localStorage.clear()
+    renderLeads()
 }
